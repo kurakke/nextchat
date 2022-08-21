@@ -4,8 +4,7 @@ import styles from "../styles/Home.module.css";
 import React, { useState } from "react";
 import io from "socket.io-client";
 
-const socket = io("https://nextchatback.herokuapp.com/");
-
+const socket = io("https://nextchatback.herokuapp.com");
 export default function Home() {
   const [message, setMessage] = useState("");
   const [list, setList] = useState([]);
